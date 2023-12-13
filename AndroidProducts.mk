@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_porsche.mk
+    $(LOCAL_DIR)/evolution_porsche.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_porsche-user \
-    aosp_porsche-userdebug \
-    aosp_porsche-eng
+    evolution_porsche-user \
+    evolution_porsche-userdebug \
+    evolution_porsche-eng
