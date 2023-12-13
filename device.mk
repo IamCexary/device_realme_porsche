@@ -69,6 +69,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/powerhint_lahaina.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
+# RemovePackages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
