@@ -37,6 +37,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.face.sense_service.camera_id=1
 
+# Firmware
+$(call inherit-product-if-exists, vendor/realme/firmware/porsche/BoardConfigVendor.mk)
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc-service.nxp \
