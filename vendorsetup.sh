@@ -3,8 +3,8 @@ echo "Cloning Common Device Tree..."
 git clone https://github.com/IamCexary/device_oneplus_sm8350-common.git -b udc device/oneplus/sm8350-common
 echo "Cloning Hardware Tree..."
 git clone https://github.com/IamCexary/hardware_oplus.git -b udc hardware/oplus
-echo "Cloning Arasaka Kernel Source..."
-git clone --depth=1 https://github.com/IamCexary/android_kernel_oneplus_sm8350.git -b uvite kernel/oneplus/sm8350
+echo "Cloning AtomX Kernel Source..."
+git clone --depth=1 https://github.com/IamCexary/android_kernel_realme_sm8350.git -b uvite kernel/oneplus/sm8350
 echo "Cloning Common Vendor Tree..."
 git clone --depth=1 https://github.com/IamCexary/vendor_oneplus_sm8350-common.git -b udc vendor/oneplus/sm8350-common
 echo "Cloning Vendor Tree..."
@@ -18,6 +18,6 @@ git clone --depth=1 https://gitlab.com/kajirokasuna/proprietary_vendor_realme_fi
 echo "Cloning Oneplus Camera..."
 git clone --depth=1 https://gitlab.com/kajirokasuna/proprietary_vendor_oplus_camera.git -b topaz-porsche vendor/oplus/camera
 
-# It is Mandatory to use KernelSU with Arasaka Kernel so lets set it up
-echo "Setting Up KernelSU for Arasaka Kernel..."
+# We wish to ship KernelSU with AtomX Kernel so lets set it up
+echo "Setting Up KernelSU for AtomX Kernel..."
 cd kernel/oneplus/sm8350 && curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash - && cd && cd evox
