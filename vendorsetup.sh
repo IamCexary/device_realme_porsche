@@ -11,8 +11,6 @@ echo "Cloning Vendor Tree..."
 git clone --depth=1 https://github.com/IamCexary/vendor_realme_porsche.git -b udc vendor/realme/porsche
 echo "Cloning OPlusExtras..."
 git clone https://github.com/IamCexary/packages_apps_OPlusExtras.git packages/apps/OPlusExtras
-echo "Cloning Viper4Android..."
-git clone https://github.com/IamCexary/packages_apps_ViPER4AndroidFX.git packages/apps/ViPER4AndroidFX
 echo "Cloning Firmware..."
 git clone --depth=1 https://gitlab.com/kajirokasuna/proprietary_vendor_realme_firmware.git -b uvite-porsche vendor/realme/firmware
 echo "Cloning Oneplus Camera..."
